@@ -1,0 +1,58 @@
+package day13_String;
+
+import java.util.Scanner;
+
+public class MyInfo {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter your age");
+        int age = scan.nextInt();//19
+
+        System.out.println("Enter your gender");
+        String gender = scan.next();//Male
+
+        scan.nextLine();//EnterEnter
+
+        System.out.println("Enter your full name");
+        String fullName = scan.nextLine();//if the previous scnner'metod that's used is not nexLine(),then we need provide one more nextLine Method
+
+        System.out.println("Enter your phone number");
+        long phone = scan.nextLong();
+
+        System.out.println("Enter your zip code");
+        int zipCode = scan.nextInt();
+
+        scan.nextLine();
+
+        System.out.println("Enter your School name");
+        String schollName = scan.nextLine();
+
+        System.out.println("Enter your city name");
+        String city = scan.nextLine();
+
+        System.out.println("Enter your state name");
+        String state = scan.nextLine();
+
+        System.out.println("Enter your building number");
+        int buildingNum= scan.nextInt();
+
+        scan.nextLine();
+
+        System.out.println("Enter your street name");
+        String street = scan.nextLine();
+
+        scan.close();
+
+
+        System.out.println("Full name:" +fullName);
+        System.out.println("Age:"+age);
+        System.out.println("Gender:"+gender);
+        System.out.println("Phone number:"+phone);
+        System.out.println("Address: \n\t"+buildingNum+" "+street+"\n\t"+city+","+state+" "+zipCode);
+        System.out.println("School name: "+schollName);
+
+    }
+}
