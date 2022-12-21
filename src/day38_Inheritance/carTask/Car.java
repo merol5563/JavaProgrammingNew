@@ -30,7 +30,7 @@ public class Car  {
     /*
     public void fly(){
     }
-    fly() is not common for all the cars, and parent class should only contain the common feature of all the subclasses
+    fly() is not common for all the cars, and parent class should only contain the common feature of all, the subclasses
 
 */
 
